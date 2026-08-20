@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="flex flex-wrap justify-center gap-6">
             <a
               href={PORTFOLIO_DATA.personalInfo.github}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-8 py-4 rounded-full glass-card hover:bg-gray-800 hover:border-gray-600 transition-all text-lg font-medium"
             >
@@ -32,7 +32,7 @@ const Contact = () => {
             
             {PORTFOLIO_DATA.personalInfo.email && (
               <a
-                href={`mailto:${PORTFOLIO_DATA.personalInfo.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PORTFOLIO_DATA.personalInfo.email}`}
                 className="flex items-center gap-3 px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white transition-all text-lg font-medium"
               >
                 <Mail className="w-6 h-6" />
@@ -43,7 +43,7 @@ const Contact = () => {
             {PORTFOLIO_DATA.personalInfo.linkedin && (
               <a
                 href={PORTFOLIO_DATA.personalInfo.linkedin}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-8 py-4 rounded-full glass-card hover:bg-gray-800 hover:border-gray-600 transition-all text-lg font-medium"
               >
